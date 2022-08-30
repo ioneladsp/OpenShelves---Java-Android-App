@@ -4,7 +4,7 @@ The application I developed during the 3rd year of study in order to complete my
 - nested recyclerviews
 - API calls with Retrofit
 - JSON manipulation
-- push notification
+- push notifications
 - login, register & changing password using Firebase
 - statistics and graphs so that the user can visualise the reading progress
 - managing digital bookshelves and accessing millions of books that can be added to a specific collection (Want to Read, Already Read, Currently Reading)
