@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/containerdiscover"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DiscoverCategoryDetail">
+
+    <RelativeLayout
+        android:id="@+id/toolbarMyBooks"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shapemybooks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_black" />
+
+        <ImageButton
+            android:id="@+id/btnSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/sorticon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitluCategorie"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMyBooks" />
+
+    <TextView
+        android:id="@+id/tvDescriereCategorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="5dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitluCategorie" />
+
+    <TextView
+        android:id="@+id/tvplus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriereCategorie"
+        android:text="">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/lvCategory"
+        android:listSelector="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvplus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/containerProfile"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbarMyBooks"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shapemybooks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label1Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="My Year in Books"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMyBooks">
+
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/tvProgressScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic"
+        android:text="Books are a uniquely portable magic - Stephan King"
+        app:layout_constraintTop_toBottomOf="@+id/progressScreen"></TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarMyBooks"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/yearsinbooks1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/delius_swash_caps"
+            android:text="2022"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19" />
+
+        <ImageView
+            android:id="@+id/avatarIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="305dp"
+            android:src="@drawable/avatarmodified3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraint2" />
+
+        <TextView
+            android:id="@+id/tvNumeUtilizator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elegantTextHeight="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatarIcon" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:layout_marginTop="30dp"
+            android:text="This is your journey in books for 2022!"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUpdateProgress" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:text="pages read"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/avatarIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNrPagini" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:text="books read"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatarIcon"
+            app:layout_constraintTop_toBottomOf="@+id/tvNrCarti" />
+
+        <TextView
+            android:id="@+id/tvNrPagini"
+            android:layout_marginTop="315dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/avatarIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraint2" />
+
+        <TextView
+            android:id="@+id/tvNrCarti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="315dp"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatarIcon"
+            app:layout_constraintTop_toTopOf="@+id/constraint2" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_marginTop="30dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are 0% close to reaching your annual goal"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumeUtilizator"></TextView>
+
+        <ProgressBar
+            android:id="@+id/pBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:minWidth="200dp"
+            android:minHeight="20dp"
+            android:progress="0"
+            android:scaleY="2"
+            android:theme="@style/ProgressBarStyle"
+            android:layout_marginLeft="105dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProgress"></ProgressBar>
+
+        <Button
+            android:id="@+id/btnUpdateProgress"
+            style="@style/MyButtonStyle2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="UPDATE YOUR GOAL"
+            android:textAlignment="center"
+            android:textColor="@color/buttonLogin"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pBar">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/tvBooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:layout_marginTop="1dp"
+            android:text="0/12"
+            app:layout_constraintStart_toEndOf="@+id/pBar"
+            app:layout_constraintTop_toBottomOf="@+id/tvProgress" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

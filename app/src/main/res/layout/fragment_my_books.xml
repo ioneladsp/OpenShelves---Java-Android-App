@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/containerMyBooks"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MyBooksFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbarMyBooks"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shapemybooks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label1Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="My Books"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/label1Tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/logout3" />
+
+        <ImageButton
+            android:id="@+id/btnNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/label1Tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/notification3" />
+
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/label1Tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="190dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarMyBooks">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tvProgressScreen"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:lines="2"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="@string/quoteP0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/progressScreen"></TextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarMyBooks"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvTitleMyBooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraint2"
+                android:layout_marginTop="10dp"
+                android:elegantTextHeight="true"
+                android:text="Here you can manage your bookshelves"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvYourReadingActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mybooks"
+                android:elegantTextHeight="true"
+                android:paddingLeft="15dp"
+                android:text="YOUR READING ACTIVITY"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleMyBooks"></TextView>
+
+            <TextView
+                android:id="@+id/tvCurentlyReading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elegantTextHeight="true"
+                android:paddingLeft="15dp"
+                android:text="Currently Reading"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYourReadingActivity"></TextView>
+
+            <TextView
+                android:id="@+id/tvNoBooksCR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurentlyReading"
+                android:text="1 book"
+                android:textStyle="italic"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                >
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/RVCurrentlyReading"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoBooksCR" />
+
+            <TextView
+                android:id="@+id/tvWantToRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RVCurrentlyReading"
+                android:layout_marginTop="10dp"
+                android:elegantTextHeight="true"
+                android:text="Want to Read"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvNoBooksWR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWantToRead"
+                android:text="1 book"
+                android:textStyle="italic"
+                android:paddingLeft="15dp"
+                android:textSize="17sp">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVWantToRead"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoBooksWR" />
+
+            <TextView
+                android:id="@+id/tvAlreadyRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RVWantToRead"
+                android:layout_marginTop="10dp"
+                android:elegantTextHeight="true"
+                android:text="Already Read"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvNoBooksAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAlreadyRead"
+                android:text="1 book"
+                android:textStyle="italic"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                >
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/RVAlreadyRead"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoBooksAR"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvSeeAllCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="View all >"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYourReadingActivity" />
+
+            <TextView
+                android:id="@+id/tvSeeAllWR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:text="View all >"
+                android:textColor="@color/toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RVCurrentlyReading" />
+
+            <TextView
+                android:id="@+id/tvSeeAllAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="View all >"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RVWantToRead" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

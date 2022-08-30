@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerBookDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="250dp">
+        </ProgressBar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/details">
+
+                    <ImageView
+                        android:id="@+id/bookCover"
+                        android:layout_width="115dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/book"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/titleBook"
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Little Women"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/editura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="(Little Women #1)"
+                        android:textAllCaps="true"
+                        android:textColor="#808080"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titleBook" />
+
+                    <TextView
+                        android:id="@+id/author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="by Loise May Alcott, Regina Barreca(Introduction)m Martha (Illustrator)"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editura" />
+
+                    <TextView
+                        android:id="@+id/bookDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="left"
+                        android:justificationMode="inter_word"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="A brave and heartbreaking novel that digs its claws into you and doesn't let go, long after you've finished it' Anna Todd, author of the After series 'A glorious and touching read, a forever keeper' "
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnAddBook" />
+
+                    <Button
+                        android:id="@+id/btnAddBook"
+                        android:layout_width="220dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_bg"
+                        android:text="Add Book"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        app:backgroundTint="@color/buttonLogin"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/author" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

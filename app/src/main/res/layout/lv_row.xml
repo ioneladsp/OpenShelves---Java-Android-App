@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/ivBookcover"
+        android:layout_width="90dp"
+        android:src="@color/teal_200"
+        android:layout_height="130dp"></ImageView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:elegantTextHeight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ivBookcover"
+        android:text="Title"></TextView>
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:textSize="13sp"
+       android:elegantTextHeight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ivBookcover"
+        android:layout_below="@id/tvTitle"
+        android:text="Author"></TextView>
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:textSize="13sp"
+        android:elegantTextHeight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ivBookcover"
+        android:layout_below="@id/tvAuthor"
+        android:text="Year"></TextView>
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:elegantTextHeight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ivBookcover"
+        android:layout_below="@id/tvYear"
+        android:text="Quote"></TextView>
+
+</RelativeLayout>

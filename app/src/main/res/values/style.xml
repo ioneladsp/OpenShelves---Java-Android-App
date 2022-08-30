@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ProgressDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name='colorAccent'>@color/buttonLogin</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="DividerWhite">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="customfontstyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="android:colorControlNormal">@color/colorLightGray</item>
+        <item name="android:colorControlActivated">@color/colorRating</item>
+    </style>
+
+    <style name="RatingBar2" parent="Theme.AppCompat">
+        <item name="android:colorControlNormal">@color/colorRatingGray</item>
+        <item name="android:colorControlActivated">@color/colorRating</item>
+    </style>
+
+
+    <style name="MaterialThemeDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--        Title Color-->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--        Radio button unchecked-->
+        <item name="android:colorControlNormal">@color/buttonLogin</item>
+        <!--        Radio button checked-->
+        <item name="android:colorControlActivated">@color/buttonLogin</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/toolbar</item>
+    </style>
+
+
+</resources>

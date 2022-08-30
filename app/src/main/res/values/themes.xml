@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OpenShelves" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/buttonLogin</item>
+        <item name="colorPrimaryVariant">@color/buttonLogin</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/buttonLogin</item>
+        <item name="colorSecondaryVariant">@color/buttonLogin</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.OpenShelves.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyButtonStyle"
+        parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorbtn</item>
+    </style>
+
+    <style name="MyButtonStyle2"
+        parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/buttonLogin</item>
+    </style>
+
+    <style name="Theme.OpenShelves.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.OpenShelves.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

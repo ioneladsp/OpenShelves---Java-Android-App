@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/containerStatistics"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StatisticsFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/toolbarMyBooks"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shapemybooks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back_black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/label1Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Statistics"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="190dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbarMyBooks">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/tvProgressScreen"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:lines="2"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="@string/quoteP0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="30dp"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/progressScreen"></TextView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/constraint2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbarMyBooks"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/avatarIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/avatarmodified3"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/constraint2" />
+
+                <TextView
+                    android:id="@+id/tvNumeUtilizator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Ionela Despa"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toEndOf="@id/avatarIcon"
+                    app:layout_constraintTop_toTopOf="@+id/constraint2" />
+
+                <TextView
+                    android:id="@+id/tvReader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@id/avatarIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNumeUtilizator" />
+
+                <TextView
+                    android:id="@+id/tvNoBooksTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="12 books added"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@id/avatarIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/tvReader" />
+
+                <ProgressBar
+                    android:id="@+id/pBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginLeft="89dp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:layout_marginTop="15dp"
+                    android:minWidth="50dp"
+                    android:scaleY="2.2"
+                    android:scaleX="3.3"
+                    android:minHeight="170dp"
+                    android:progress="0"
+                    android:rotation="270"
+                    android:theme="@style/ProgressBarStyle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/avatarIcon"></ProgressBar>
+
+
+                <ProgressBar
+                    android:id="@+id/pBar2"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:layout_marginLeft="10dp"
+                    android:max="100"
+                    android:layout_marginTop="15dp"
+                    android:minWidth="50dp"
+                    android:scaleY="2.2"
+                    android:scaleX="3.3"
+                    android:minHeight="170dp"
+                    android:progress="0"
+                    android:rotation="270"
+                    android:theme="@style/ProgressBarStyle"
+                    app:layout_constraintStart_toEndOf="@id/pBar"
+                    app:layout_constraintTop_toBottomOf="@id/avatarIcon"></ProgressBar>
+
+
+                <ProgressBar
+                    android:id="@+id/pBar3"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:minWidth="50dp"
+                    android:scaleY="2.2"
+                    android:scaleX="3.3"
+                    android:minHeight="170dp"
+                    android:progress="0"
+                    android:rotation="270"
+                    android:theme="@style/ProgressBarStyle"
+                    app:layout_constraintStart_toEndOf="@id/pBar2"
+                    app:layout_constraintTop_toBottomOf="@id/avatarIcon"></ProgressBar>
+
+
+                <ProgressBar
+                    android:id="@+id/pBar4"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:minWidth="50dp"
+                    android:scaleY="2.2"
+                    android:scaleX="3.3"
+                    android:minHeight="170dp"
+                    android:progress="0"
+                    android:rotation="270"
+                    android:theme="@style/ProgressBarStyle"
+                    app:layout_constraintStart_toEndOf="@id/pBar3"
+                    app:layout_constraintTop_toBottomOf="@id/avatarIcon"></ProgressBar>
+
+                <TextView
+                    android:id="@+id/tvP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fiction"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="95dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pBar" />
+
+                <TextView
+                    android:id="@+id/tvP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Science"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="17dp"
+                    app:layout_constraintStart_toEndOf="@id/tvP1"
+                    app:layout_constraintTop_toBottomOf="@+id/pBar" />
+
+                <TextView
+                    android:id="@+id/tvP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biography"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintStart_toEndOf="@id/tvP2"
+                    app:layout_constraintTop_toBottomOf="@+id/pBar" />
+
+                <TextView
+                    android:id="@+id/tvP4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="15dp"
+                    app:layout_constraintStart_toEndOf="@id/tvP3"
+                    app:layout_constraintTop_toBottomOf="@+id/pBar" />
+
+                <ImageView
+                    android:id="@+id/imgFiction"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/fictionimg2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvP1"></ImageView>
+
+                <TextView
+                    android:id="@+id/tvFiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Fiction"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imgFiction"
+                    app:layout_constraintTop_toBottomOf="@+id/tvP1" />
+
+                <TextView
+                    android:id="@+id/tvNoBooksFiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="5 books"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgFiction"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFiction" />
+
+                <ImageView
+                    android:id="@+id/imgScience"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/scienceimg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFiction"></ImageView>
+
+                <TextView
+                    android:id="@+id/tvScience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Science"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imgScience"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFiction" />
+
+                <TextView
+                    android:id="@+id/tvNoBooksScience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="5 books"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgScience"
+                    app:layout_constraintTop_toBottomOf="@+id/tvScience" />
+
+                <ImageView
+                    android:id="@+id/imgBiography"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="35dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/imgbio2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgScience"></ImageView>
+
+                <TextView
+                    android:id="@+id/tvBiography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Biography"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imgBiography"
+                    app:layout_constraintTop_toBottomOf="@+id/imgScience" />
+
+                <TextView
+                    android:id="@+id/tvNoBooksBiography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="5 books"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBiography"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBiography" />
+
+                <ImageView
+                    android:id="@+id/imgOther"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/otherimg3"
+                    app:layout_constraintStart_toEndOf="@+id/imgFiction"
+                    app:layout_constraintTop_toBottomOf="@+id/tvP3"></ImageView>
+
+                <TextView
+                    android:id="@+id/tvOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Other"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imgOther"
+                    app:layout_constraintTop_toBottomOf="@+id/tvP1"  />
+
+                <TextView
+                    android:id="@+id/tvNoBooksOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="5 books"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgOther"
+                    app:layout_constraintTop_toBottomOf="@+id/tvOther"  />
+
+                <ImageView
+                    android:id="@+id/imgQuiz"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/quiz1"
+                    app:layout_constraintStart_toEndOf="@+id/tvNumeUtilizator"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

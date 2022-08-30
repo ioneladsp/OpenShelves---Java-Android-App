@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">OpenShelves</string>
+    <string name="quote_splash">I have always imagined that Paradise will be a kind of library</string>
+    <string name="quote_author">Jorge Luis Borges</string>
+    <string name="welcome_login">Welcome Back!</string>
+    <string name="tv1register">Meet your next favorite book</string>
+    <string name="tv2register">And let us organise your collection</string>
+    <string name="tv3LogIn">Already have an account? Log in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_discover_more">DiscoverMoreActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="classicsCategory">A classic stands the test of time. The work is usually considered to be a representation of the period in which it was written; and the work merits lasting recognition. In other words, if the book was published in the recent past, the work is not a classic. A classic has a certain universal appeal. Great works of literature touch us to our very core beings--partly because they integrate themes that are understood by readers from a wide range of backgrounds and levels of experience. Themes of love, hate, death, life, and faith touch upon some of our most basic emotional responses.</string>
+    <string name="romanceCategory">According to the Romance Writers of America, \'Two basic elements comprise every romance novel: a central love story and an emotionally-satisfying and optimistic ending Both the conflict and the climax of the novel should be directly related to that core theme of developing a romantic relationship, although the novel can also contain subplots that do not specifically relate to the main characters\' romantic love. Other definitions of a romance novel may be broader, including other plots and endings or more than two people, or narrower, restricting the types of romances or conflicts.</string>
+    <string name="nonfictionCategory">Nonfiction is an account or representation of a subject which is presented as fact. This presentation may be accurate or not; that is, it can give either a true or a false account of the subject in question. However, it is generally assumed that the authors of such accounts believe them to be truthful at the time of their composition. Note that reporting the beliefs of others in a nonfiction format is not necessarily an endorsement of the ultimate veracity of those beliefs, it is simply saying that it is true that people believe that (for such topics as mythology, religion). Nonfiction can also be written about fiction.</string>
+    <string name="fantasyCategory">Fantasy is a genre that uses magic and other supernatural forms as a primary element of plot, theme, and/or setting Fantasy is generally distinguished from science fiction and horror by the expectation that it steers clear of technological and macabre themes, respectively, though there is a great deal of overlap between the three (collectively known as speculative fiction or science fiction/ fantasy) In its broadest sense, fantasy comprises works by many writers, artists, filmmakers, and musicians, from ancient myths and legends to many recent works embraced by a wide audience today, including young adults.</string>
+
+
+    <string name="not_available">Not Available</string>
+    <string name="desc_not_available">Description Not Available</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="no_bookmarks">No Bookmarks Here</string>
+    <string name="no_bookmarks_placeholder">Don\'t forget to bookmark the books you like so you can find those easily over here.</string>
+    <string name="return_home">Return To Home Page</string>
+    <string name="no_internet_header">Oops, No Internet Connection</string>
+    <string name="no_internet_text">Make sure wifi or cellular data is turned on and try again.</string>
+    <string name="try_again">Try Again</string>
+    <string name="reach_end">You\'ve reached the end. Thanks!</string>
+    <string name="start_search">Start Searching</string>
+    <string name="no_reviews">No Rating</string>
+    <string name="best_books_desc">The following are the best books ever, as voted on by the general Goodreads community.</string>
+    <string name="dash">-</string>
+
+    <string name="quoteP0">\'Books are a uniquely portable magic.\' - Stephan King</string>
+    <string name="quoteP1">\'Sleep is good, he said, and books are better.\' - George Martin</string>
+    <string name="quoteP2">\'Books may well be the only true magic.\' - Alice Hoffman</string>
+    <string name="quoteP3">\"The best books...are those that tell you what you know already.\' - George Orwell</string>
+    <string name="quoteP4">\'Let us read, and let us dance; these two will never do any harm to the world.\' - Voltaire</string>
+
+
+</resources>

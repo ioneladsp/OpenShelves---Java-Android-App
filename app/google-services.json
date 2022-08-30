@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615056386796",
+    "project_id": "openshelves-1b6cb",
+    "storage_bucket": "openshelves-1b6cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615056386796:android:43428b41f5d17991d253c9",
+        "android_client_info": {
+          "package_name": "com.example.openshelves"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615056386796-4kt4q4nesdrni6u25pij5q3n54la8fpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKgUmepa7uX1NXdKBM775riZu40YGMf30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615056386796-4kt4q4nesdrni6u25pij5q3n54la8fpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

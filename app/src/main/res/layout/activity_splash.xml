@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashscreen_backgroundcolor"
+    tools:context=".accountDetails.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/splashimagefinal" />
+
+
+    <TextView
+        android:id="@+id/tvQuoteSplash"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:elegantTextHeight="true"
+        android:text="@string/quote_splash"
+        android:textAlignment="center"
+        android:textColor="#131212"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/tvQuoteAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:elegantTextHeight="true"
+        android:text="@string/quote_author"
+        android:textAlignment="textEnd"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuoteSplash" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

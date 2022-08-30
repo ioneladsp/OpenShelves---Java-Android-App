@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Discover"
+        android:icon="@drawable/discover"
+        android:id="@+id/discover"/>
+    <item android:title="MyBooks"
+        android:icon="@drawable/mybooks"
+        android:id="@+id/mybooks"/>
+    <item android:title="Search"
+        android:icon="@drawable/search3"
+        android:id="@+id/search"/>
+    <item android:title="Profile"
+        android:icon="@drawable/user"
+        android:id="@+id/profile"
+        />
+</menu>
