@@ -31,5 +31,8 @@ The initial UI was created using the design tool Figma: https://www.figma.com/pr
 
 ![image](https://user-images.githubusercontent.com/75119826/187411069-0525fa30-86b2-4cd6-b5ad-37ac079b5cf9.png)
 
+![image](https://user-images.githubusercontent.com/75119826/187411650-50fca06a-cac4-42ab-88c9-153fe7147509.png)
+
+
 
 
